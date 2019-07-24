@@ -1,0 +1,11 @@
+<p>selectcolor works!</p>
+<label>
+  Select Color:
+  <br>
+  <input type="text" (change)="changeColor($event.target.value)">
+</label>
+<br>
+<br>
+<div [style.background-color]="color" style="height:200px;width: 200px;border-radius: 50%">
+  <h1 style="color: white;line-height: 200px;text-align: center">color change</h1>
+</div>
